@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheer" href="style.css"/>
+    </head>
+    <body>
+         <div class="center">
+             <button onclick="change()">Click me</button>
+              <p id="first" style="text-align:center"></p>
+       </div>
+        <script>
+            function change(){
+                const colors=["red","blue","lightblue","pink","yellow","gray"];
+                let color=colors[Math.floor(Math.random()*colors.length)];
+                document.body.style.backgroundColor=color;
+ 
+                let paragraph=document.getElementById("first");
+                let text=document.createTextNode("The current color is "+color);
+                if(paragraph.textContent.trim()===""){
+                    paragraph.appendChild(text);
+                }
+                else{
+                    paragraph.textContent="";
+                    paragraph.appendChild(text);
+                }
+            }
+        </script>
+    </body>
+</html>
