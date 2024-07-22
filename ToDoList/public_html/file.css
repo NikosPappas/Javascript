@@ -1,0 +1,39 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Jul 22, 2024, 9:16:29 AM
+    Author     : nikos-pappas
+*/
+body{
+    font-family:Arial,sans-serif;
+    text-align:center;
+    margin-top:px;
+}
+h1{
+    margin-bottom:px;
+}
+input{
+    width:200px;
+    padding:5px;
+    margin-right:5px;
+}
+button{
+    padding:10px 20px;
+    cursor:pointer;
+    background-color:#f1f1f1;
+    border-radius: 5px  
+}
+button:hover{
+    background-color:#ddd;
+}
+ul{
+    list-style: none;
+    padding:0;
+    margin-top:20px;
+    text-align: left;
+}
+li{
+    margin-bottom: 10px;
+}
